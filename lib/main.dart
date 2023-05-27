@@ -10,7 +10,14 @@ import 'View/home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyB2NcOtt_sRn5IBgEKNPRkweCMv6L2RpGI",
+      projectId: "fabolus-17502",
+      messagingSenderId: "742354980879",
+      appId: "1:742354980879:web:fe75687b581d9987bcd37a",
+    ),
+  );
   runApp(const MyApp());
 }
 
